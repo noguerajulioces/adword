@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Keyword badges</h1>
+
+<div id="keyword_badges">
+  <% @keyword_badges.each do |keyword_badge| %>
+    <%= render keyword_badge %>
+    <p>
+      <%= link_to "Show this keyword badge", keyword_badge %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New keyword badge", new_keyword_badge_path %>

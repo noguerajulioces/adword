@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @keyword_badge %>
+
+<div>
+  <%= link_to "Edit this keyword badge", edit_keyword_badge_path(@keyword_badge) %> |
+  <%= link_to "Back to keyword badges", keyword_badges_path %>
+
+  <%= button_to "Destroy this keyword badge", @keyword_badge, method: :delete %>
+</div>
